@@ -1,11 +1,14 @@
 import * as S from './styles'
 
-interface MainProps {
-    title: string
-    description: string
-}
+// interface MainProps {
+//     title: string
+//     description: string
+// }
 
-const Main: React.FC<MainProps> = ({ title, description }) => (
+const Main = ({
+    title = 'Advanced React',
+    description = 'Typescript, Reactjs, Nextjs and Styled Components'
+}) => (
     <S.Wrapper>
         <S.Logo
             src="/img/logo.svg"
